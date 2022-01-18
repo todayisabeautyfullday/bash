@@ -11,7 +11,16 @@
 #this is how we can concatenate two strings:
 #read gets an input 
 
-#read str1
-#read str2 
-#newstr=$str1$str2
-#echo "concatenated string is $newstr"
+read str1
+read str2 
+newstr="$str1 $str2"
+echo "concatenated string is:  $newstr"
+
+#comaring two strings:
+
+if [ $str1 == $str2 ]
+then
+    echo "Match"
+else
+    echo "Not Matched"
+fi
